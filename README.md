@@ -9,7 +9,6 @@ By the way, you know, python is too slow ??
 ```bash
 $ python main.py --fibonacci 40
 
-python main.py --fibonacci 40
 python                : 22.503003358004207
 python(numba)         : 0.8012343700029305
 python(numba-nopython): 0.7329909489999409
