@@ -19,7 +19,7 @@ rust(pyo3)            : 0.2173983950051479
 
 ## Setup
 
-* How to start poetry project
+* ~~How to start poetry project~~
   * `$ poetry init -q`
 * How to use nanobind
   * `cmake -S . -B build`
