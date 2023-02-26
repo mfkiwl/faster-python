@@ -1,4 +1,4 @@
-# fastor-python
+# faster-python
 
 Rust is so fast, and python can leverage power of rust.
 
