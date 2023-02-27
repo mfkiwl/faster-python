@@ -12,7 +12,7 @@ By the way, you know, python is too slow ??
 $ git clone <repo> && cd <repo>
 $ poetry install
 $ poetry shell
-$ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+$ cmake -S . -B build
 $ cmake --build build
 
 #############
@@ -34,7 +34,7 @@ rust(pyo3)            : 0.21601284098869655
   * `$ pip install nanobind`
   * edit CMakeLists.txt
   * edit <file_name>.cpp
-  * `$ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release`
+  * `$ cmake -S . -B build`
   * `$ cmake --build build`
 * How to use pyo3
   * `$ pip install maturin`
