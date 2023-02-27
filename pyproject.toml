@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "py-rust"
+name = "faster-python"
 version = "0.1.0"
 description = ""
 authors = ["terib0l <taiyakiou@gmail.com>"]
