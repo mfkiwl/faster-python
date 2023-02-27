@@ -7,30 +7,40 @@ By the way, you know, python is too slow ??
 ## Usage
 
 ```bash
+$ git clone <repo> && cd <repo>
+$ poetry install
+$ poetry shell
+$ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
+$ cmake --build build
+
+#############
+# benchmark #
+#############
 $ python main.py --fibonacci 40
 
-python                : 22.503003358004207
-python(numba)         : 0.8012343700029305
-python(numba-nopython): 0.7329909489999409
-python(cython)        : 0.6923800079966895
-c++(nanobind)         : 0.6267670020024525
-rust(pyo3)            : 0.2173983950051479
+python                : 21.961166224995395
+python(numba)         : 0.7921977119985968
+python(numba-nopython): 0.7205598769942299
+python(cython)        : 0.6859547469939571
+c++(nanobind)         : 0.3306063709896989
+rust(pyo3)            : 0.21601284098869655
 ```
 
 ## Setup
 
-* ~~How to start poetry project~~
-  * `$ poetry init -q`
 * How to use nanobind
-  * `cmake -S . -B build`
-  * `cmake --build build`
+  * `$ pip install nanobind`
+  * edit CMakeLists.txt
+  * edit <file_name>.cpp
+  * `$ cmake -S . -B build -DCMAKE_BUILD_TYPE=Release`
+  * `$ cmake --build build`
 * How to use pyo3
-  * `$ poetry add maturin`
-  * `$ poetry run maturin new -b pyo3 rusty-python`
+  * `$ pip install maturin`
+  * `$ maturin new -b pyo3 rusty-python`
   * `$ cd rusty-python`
   * edit src/lib.rs
   * and back to base directory of poetry
-  * `poetry add ./rusty-python/`
+  * `$ pip install ./rusty-python/`
 
 ## Reference
 

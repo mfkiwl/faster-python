@@ -4,16 +4,16 @@ version = "0.1.0"
 description = ""
 authors = ["terib0l <taiyakiou@gmail.com>"]
 readme = "README.md"
-packages = [{include = "py_rust"}]
+packages = [{include = "rusty-python"}]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 maturin = "^0.14.14"
 numba = "^0.56.4"
 rich = "^13.3.1"
-rusty-python = {path = "rusty-python"}
 Cython = "^0.29.33"
 nanobind = "^0.1.0"
+rusty-python = {path = "rusty-python"}
 
 
 [build-system]
