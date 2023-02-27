@@ -4,7 +4,7 @@ Rust is so fast, and python can leverage power of rust.
 
 By the way, you know, python is too slow ??
 
-> Apparently, cpp(nanobind) is able to become even faster.
+> Apparently, cpp(nanobind) is able to become even faster. [link](https://github.com/terib0l/faster-python/issues/1)
 
 ## Usage
 
