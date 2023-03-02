@@ -52,6 +52,7 @@ rust(pyo3)            : 0.21601284098869655
 
 * improve time-complexity in terms of Big O Notation
 * use multi thread or process
+* use numpy?
 * use PyPy
 
 ## Reference
