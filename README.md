@@ -4,10 +4,9 @@ Rust is so fast, and python can leverage power of rust.
 
 By the way, you know, python is too slow ??
 
-> This is not what proves that rust is better than cpp.  
-> Apparently, cpp(nanobind) is able to become even faster.  
-> 
-> [link](https://github.com/terib0l/faster-python/issues/1)
+> This is not what proves that rust is better than cpp.
+> Apparently, cpp(nanobind) is able to become even faster.
+> [[link](https://github.com/terib0l/faster-python/issues/1)]
 
 ## Usage
 
@@ -33,13 +32,13 @@ rust(pyo3)            : 0.21601284098869655
 
 ## How to make each of python bindings
 
-* How to use nanobind
+* nanobind
   * `$ pip install nanobind`
   * edit CMakeLists.txt
   * edit <file_name>.cpp
   * `$ cmake -S . -B build`
   * `$ cmake --build build`
-* How to use pyo3
+* pyo3
   * `$ pip install maturin`
   * `$ maturin new -b pyo3 rusty-python`
   * `$ cd rusty-python`
