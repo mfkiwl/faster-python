@@ -4,7 +4,10 @@ Rust is so fast, and python can leverage power of rust.
 
 By the way, you know, python is too slow ??
 
-> Apparently, cpp(nanobind) is able to become even faster. [link](https://github.com/terib0l/faster-python/issues/1)
+> This is not what proves that rust is better than cpp.  
+> Apparently, cpp(nanobind) is able to become even faster.  
+> 
+> [link](https://github.com/terib0l/faster-python/issues/1)
 
 ## Usage
 
@@ -28,7 +31,7 @@ c++(nanobind)         : 0.3306063709896989
 rust(pyo3)            : 0.21601284098869655
 ```
 
-## Setup
+## How to make each of python bindings
 
 * How to use nanobind
   * `$ pip install nanobind`
@@ -43,6 +46,14 @@ rust(pyo3)            : 0.21601284098869655
   * edit src/lib.rs
   * and back to base directory of poetry
   * `$ pip install ./rusty-python/`
+
+## Other ways to make python faster
+
+> First of all, you need to identify bottlenecks using either of ways which cProfile, time.perfcounter(), %%timeit.
+
+* improve time-complexity in terms of Big O Notation
+* use multi thread or process
+* use PyPy
 
 ## Reference
 
