@@ -54,6 +54,7 @@ rust(pyo3)            : 0.21601284098869655
 * use multi thread or process
 * use numpy?
 * use PyPy
+* use [codon](https://github.com/exaloop/codon)?
 
 ## Reference
 
